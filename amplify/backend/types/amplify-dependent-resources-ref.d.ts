@@ -9,5 +9,11 @@ export type AmplifyDependentResourcesAttributes = {
             "AppClientIDWeb": "string",
             "AppClientID": "string"
         }
+    },
+    "storage": {
+        "s3a06357d6": {
+            "BucketName": "string",
+            "Region": "string"
+        }
     }
 }
