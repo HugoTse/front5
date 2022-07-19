@@ -20,7 +20,8 @@ import { Flex,
          TableBody,
          ThemeProvider,
          Theme,
-         TextAreaField } from '@aws-amplify/ui-react';
+         TextAreaField,
+         SelectField } from '@aws-amplify/ui-react';
 import { AiTwotoneDelete } from "react-icons/ai";
 
 
@@ -334,26 +335,8 @@ function App({ signOut }) {
         <Button onClick={() => callAPI()}> Post to API GW connected to S3 </Button>
       </div>
 
-      <div className='tableDiv'>
       {/* Table stuff */}
-      <Flex direction="column">
-      <Table variation="bordered">
-        <TableRow>
-          <TableCell>Bordered</TableCell>
-          <TableCell>Bordered</TableCell>
-        </TableRow>
-        <TableRow>
-          <TableCell>Bordered</TableCell>
-          <TableCell>Bordered</TableCell>
-        </TableRow>
-        <TableRow>
-          <TableCell>Bordered</TableCell>
-          <TableCell>Bordered</TableCell>
-        </TableRow>
-      </Table>
-      </Flex>
-      </div>
-      <div className='tableDiv'>
+      {/* <div className='tableDiv'>
       <ThemeProvider theme={theme} colorMode="light">
         <Table highlightOnHover variation="striped">
           <TableHead>
@@ -370,22 +353,26 @@ function App({ signOut }) {
           <TableBody>
           <TableRow>
               <TableCell>
-                <TextAreaField label="" defaultValue="Amplify UI is awesome!" />
+                <TextAreaField label="" defaultValue="..." />
               </TableCell>
               <TableCell>
-                <TextAreaField label="" defaultValue="Amplify UI is awesome!" />
+                <TextAreaField label="" defaultValue="..." />
               </TableCell>
               <TableCell>
-                <TextAreaField label="" defaultValue="Amplify UI is awesome!" />
+                <TextAreaField label="" defaultValue="..." />
               </TableCell>
               <TableCell>
-                <TextAreaField label="" defaultValue="Amplify UI is awesome!" />
+                <TextAreaField label="" defaultValue="..." />
               </TableCell>
               <TableCell>
-                <TextAreaField label="" defaultValue="Amplify UI is awesome!" />
+              <SelectField label="Select Priority">
+                <option value="banana">High</option>
+                <option value="orange">Medium</option>
+                <option value="orange">Low</option>
+              </SelectField>
               </TableCell>
               <TableCell>
-                <TextAreaField label="" defaultValue="Amplify UI is awesome!" />
+                <TextAreaField label="" defaultValue="..." />
               </TableCell>
               <TableCell>
                 <Button
@@ -399,12 +386,12 @@ function App({ signOut }) {
             </TableRow>
 
             <TableRow>
-              <TableCell>abc</TableCell>
-              <TableCell>abc</TableCell>
-              <TableCell>abc</TableCell>
-              <TableCell>abc</TableCell>
-              <TableCell>abc</TableCell>
-              <TableCell>abc</TableCell>
+              <TableCell>Earnin Inc. Marcin J User Interface or ease of use</TableCell>
+              <TableCell>Glue (Analytics)</TableCell>
+              <TableCell>Earnin is looking for Business data catalog solution with easy to use GUI and they are exploring GCP's offering: https://cloud.google.com/data-catalog we do not have such offering in our portfolio. Our data catalog with Glue is an ETL tool and it does not provide an easy to use GUI for non-technical users. As for now, Earnin has not gone for GCP service as all their data is on AWS but there is a threat from GCP as Earnin's new CTO is ex-Google</TableCell>
+              <TableCell>Did not lose to GCP but customer is looking at in-house build solutions. There seems to be a lot of non-technical users that look forward to easier managed offerings.</TableCell>
+              <TableCell>Priority: High</TableCell>
+              <TableCell>AWS is working on a business catalog solution that should be available end of this year and we want to see if this is something that will fit Earnin's requirements.</TableCell>
               <TableCell>
                 <Button
                   loadingText=""
@@ -413,14 +400,32 @@ function App({ signOut }) {
                 >
                   Edit
                 </Button>
-              
+                <AiTwotoneDelete className='deleteIcon'/>
+            </TableCell>
+            </TableRow>
+
+            <TableRow>
+              <TableCell>Earnin Inc. Marcin J User Interface or ease of use</TableCell>
+              <TableCell>Glue (Analytics)</TableCell>
+              <TableCell>Earnin is looking for Business data catalog solution with easy to use GUI and they are exploring GCP's offering: https://cloud.google.com/data-catalog we do not have such offering in our portfolio. Our data catalog with Glue is an ETL tool and it does not provide an easy to use GUI for non-technical users. As for now, Earnin has not gone for GCP service as all their data is on AWS but there is a threat from GCP as Earnin's new CTO is ex-Google</TableCell>
+              <TableCell>Did not lose to GCP but customer is looking at in-house build solutions. There seems to be a lot of non-technical users that look forward to easier managed offerings.</TableCell>
+              <TableCell>Priority: High</TableCell>
+              <TableCell>AWS is working on a business catalog solution that should be available end of this year and we want to see if this is something that will fit Earnin's requirements.</TableCell>
+              <TableCell>
+                <Button
+                  loadingText=""
+                  onClick={() => alert('hello')}
+                  ariaLabel=""
+                >
+                  Edit
+                </Button>
                 <AiTwotoneDelete className='deleteIcon'/>
             </TableCell>
             </TableRow>
           </TableBody>
         </Table>
       </ThemeProvider>
-      </div>
+      </div> */}
       
 
     </View>
