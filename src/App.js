@@ -250,6 +250,7 @@ function App({ signOut }) {
       <form onSubmit={Comment}>
         <div className='formDiv'>
           <input
+            required
             className='input'
             // onChange={e => setFormData({ ...formData, 'cid': e.target.value})}
             onChange={e => setCid(e.target.value)}
@@ -259,6 +260,7 @@ function App({ signOut }) {
         </div>
         <div className='formDiv'>
           <input
+            required
             className='input'
             onChange={e => setTimestamp(e.target.value)}
             placeholder="Timestamp"
@@ -267,6 +269,7 @@ function App({ signOut }) {
         </div>
         <div className='formDiv'>
           <input
+            required
             className='input'
             onChange={e => setThand(e.target.value)}
             placeholder="Twitter Handle"
@@ -275,6 +278,7 @@ function App({ signOut }) {
         </div>
         <div className='formDiv'>
           <input
+            required
             className='input'
             onChange={e => setFname(e.target.value)}
             placeholder="First Name"
@@ -283,6 +287,7 @@ function App({ signOut }) {
         </div>
         <div className='formDiv'>
           <input
+            required
             className='input'
             onChange={e => setLname(e.target.value)}
             placeholder="Last Name"
@@ -291,6 +296,7 @@ function App({ signOut }) {
         </div>
         <div className='formDiv'>
           <input
+            required
             className='input'
             onChange={e => setDob(e.target.value)}
             placeholder="Date of Birth"
@@ -299,6 +305,7 @@ function App({ signOut }) {
         </div>
         <div className='formDiv'>
           <input
+            required
             className='input'
             onChange={e => setRegion(e.target.value)}
             placeholder="Region"
